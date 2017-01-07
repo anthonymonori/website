@@ -1,8 +1,5 @@
-# main text of home
 name: Antal János Monori
-bio: Kickass mobile developer living and working in Denmark
-
-# summary info
+bio: Kickass mobile developer living and working in Denmark 🇩🇰
 description: A playground of nerd who likes oversharing and speaking his mind out
 
 # if it's an external image, update below for true
@@ -11,7 +8,6 @@ external-image: false
 picture: assets/images/profile.jpg
 
 url: http://anthonymonori.github.io
-# your url: http://USERNAME.github.io
 
 permalink: /:title/
 
@@ -19,7 +15,7 @@ markdown: kramdown
 highlighter: rouge
 
 # To enable google analytics, supply your token below
- analytics-google: 'UA-38767481-1'
+analytics-google: 'UA-38767481-1'
 
 # To enable piwik tracking, supply your url & site ID below
 # analytics-piwik-url: 'piwik.my-host.com'
@@ -48,7 +44,7 @@ email: anthony@monori.me
 authors:
     anthonymonori:
         name: Antal János Monori
-        bio: Kickass mobile developer living and working in Denmark.
+        bio: Kickass mobile developer living and working in Denmark
         external-image: false
         picture: assets/images/profile.jpg
         twitter: anthonymonori

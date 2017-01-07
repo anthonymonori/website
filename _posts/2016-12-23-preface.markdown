@@ -1,0 +1,24 @@
+---
+title: "Preface"
+layout: post
+date: 2016-12-23 11:29
+headerImage: false
+tag:
+- personal
+blog: true
+star: true
+author: anthonymonori
+description: As any good book, this one starts with a preface too - an informal introduction where I set the expectations of the reader. Let's get started with it!
+---
+
+## Hi there!
+
+I'm not going to introduce myself to the public, as most of you, who reads this blog, already knows me in some way or another (from work, friends, social media). What I am going to do in this preface is to give some context about what is going to happen in this section of my new personal webpage.
+
+This blog is going to be about me, and my path to become a better human, partner, professional, but also about weird topics that I am momentarily are interested in. It will be a brain dump of my thoughts, sometimes personal, sometime very objective. If you stick around long enough, you might even learn a thing or two about me.
+
+I will keep this blog very minimal, but sometimes you'll see some fancy graphics here and there. Everything I will post here, I will try to make it myself.
+
+I want to get better at writing, creating and motivating myself. This will be a good (and healthy) practice to do so! Some posts will have comments enabled, some won't. It only makes sense to open it up, when the post is open-ended and I am looking to start a discussion with you!
+
+I've tried this before, but failed horribly - so you might ask, what is going to be different about this one then? Well, I cannot assure anything, but I feel more motivated than ever and 2017 will be my year - so stick around and you will see.
