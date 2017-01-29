@@ -5,9 +5,9 @@ description: A playground of nerd who likes oversharing and speaking his mind ou
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/images/profile.jpg
+picture: assets/images/profile.png
 
-url: http://monori.me
+url: https://monori.me
 
 permalink: /:title/
 
@@ -74,7 +74,7 @@ blog-nav-links: false
 show-author: true
 
 # do you want some animations?
-animation: true
+animation: false
 
 sass:
     sass_dir: _sass
