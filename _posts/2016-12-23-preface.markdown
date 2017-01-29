@@ -6,7 +6,7 @@ headerImage: false
 tag:
 - personal
 blog: true
-star: true
+star: false
 author: anthonymonori
 description: As any good book, this one starts with a preface too - an informal introduction where I set the expectations of the reader. Let's get started with it!
 ---
