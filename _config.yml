@@ -11,6 +11,9 @@ url: https://monori.me
 
 permalink: /:title/
 
+show_drafts: true
+future: false
+
 markdown: kramdown
 highlighter: rouge
 
