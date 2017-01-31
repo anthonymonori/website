@@ -50,7 +50,7 @@ Now make sure the www bucket redirects traffic to the main bucket:
 1. Go to properties, enable the Static website hosting by picking the 'Redirect requests' option and write the main bucket (example.io in our case) as targeting
 2. Optionally enable Logging on this bucket as well, as see above
 
-![How to redirect traffic from www-bucket to main-bucket](/assets/images/posts/jekyll-amazon-guide/s3-bucket-static-website.png)
+![How to redirect traffic from www-bucket to main-bucket](/assets/images/posts/jekyll-amazon-guide/s3-bucket-redirect-to-main.png)
 
 Now we need to set up the proper permission on the main bucket and the www-bucket:
 1. Go the the main bucket, got to Permission and using the drop down menu, select the 'Bucket policy' option. Use the code below to allow public access to the objects stored. Make sure to replace example.io with your bucket name:
