@@ -6,54 +6,61 @@ headerImage: false
 tag:
 - guide
 blog: true
-star: false
+star: true
 author: anthonymonori
-description: Have a Jekyll-based static website running on AWS using S3 storage, Cloudfront CDN, Route 53 DNS and SSL in about 30 minutes.
+description: Have a Jekyll-based static website running on AWS using S3 storage, Cloudfront CDN, Route 53 DNS and SSL in about 20 minutes.
 ---
 
-As a disclaimer, this guide was made after setting up two different static websites on AWS in the weekend. The first one took a whole day and a half to get it right, then for the second time I have made it in about 20 minutes from zero to up and running. Felt like I could help other folks out with a guide, that could potentially save hours of (precious) time.
+_As a disclaimer, this guide was put together after setting up two different static websites on AWS during the weekend. The first one took a whole day and a half to get it right, then for the second time I have had it up and ready in about 20 minutes. Felt like I could help other folks out with a guide, that could potentially save hours of (precious) time._
 
 ## Requirements
 
-All you need to get started is an Amazon AWS account, a Jekyll-based static website and optionally a domain name.
+All you need to get started is:
+- an Amazon AWS account
+- a Jekyll-based static website
+- a domain name
+
+This guide does not cover either of the above steps, so go ahead and create the account now, have the static website ready locally and buy a domain name if you haven't done it yet!
 
 ## Architecture
 
-The setup is quite simple: you store your static website (files) on Amazon S3 storage and serve it through Amazon Cloudfront. For this tutorial, we'll try to setup a website **exemple.io** to be running on https:// only and for the sake of intuitive urls, we are going to redirect traffic from www subdomain to the APEX domain (without the www). One note to take, is that in order to leverage the free SSL certificate Amazon provides, we need to use the US Standard (us-east-1 or US East N. Virginia) region across all services
+The setup is quite simple: you store your static website (as files) on Amazon S3 storage and serve it through Amazon Cloudfront. For this tutorial, we'll try to setup a website called `exemple.io` to be running on `https://` only and we are going to redirect traffic from www-subdomain to the APEX-domain (without the www).
+
+One important note to take, is that in order to leverage the free SSL certificate Amazon provides, we need to use the US Standard (us-east-1 or US East N. Virginia) region across all services.
 
 ## Pricing
 
 Another disclaimer, is that I do not want to be help accountable for any charges you might encounter at Amazon, so please consult their Pricing page. As of January 2017, the following monthly costs would occur for the website we are about to set up:
-- S3: $0.023 per GB (for the first 50 TB)
-- Route 53: $0.5 per hosted zone
-- Cloudfront: $0.085 per GB (for the first 10 TB)
-- Domain: yearly and varies
-- SSL: free (if using Amazon AWS, read below)
+- **S3**: $0.023 per GB (for the first 50 TB)
+- **Route 53**: $0.5 per hosted zone
+- **Cloudfront**: $0.085 per GB (for the first 10 TB)
+- **Domain**: yearly fee and varies based on registry
+- **SSL**: free (if using Amazon AWS, will cover it later)
 
 ## Simple Storage Service (S3)
 
-Quick link: [https://console.aws.amazon.com/s3/home?region=us-east-1](https://console.aws.amazon.com/s3/home?region=us-east-1)
+_Quick link: [https://console.aws.amazon.com/s3/home?region=us-east-1](https://console.aws.amazon.com/s3/home?region=us-east-1)_
 
-To start with, we are going to set up 3 buckets, corresponding to your domain. This is not a requirement for Cloudfront, but a good convention and a necessity if one day you decide to switch from Cloudfront CDN.
+To start with, we are going to set up **3 buckets**, corresponding to your domain. This is not a requirement for Cloudfront, but a good convention and a necessity if one day you decide to switch from Cloudfront CDN.
 
 ![The 3 buckets created according to our test dns](/assets/images/posts/jekyll-amazon-guide/s3-buckets.png)
 
-example.io will be the main bucket we will push to, the www.example.io bucket will be used to redirect traffic from it to the main one, and the logs.example.io will be used to store logs.
+`example.io` will be the main bucket we will push to, the `www.example.io` bucket will be used to redirect traffic from it to the main one, and the `logs.example.io` will be used to store logs.
 
 Now let's set up the main bucket:
-1. Go to properties, and enable Logging by targeting the logs.example.io bucket
-2. Go to properties, enable the Static website hosting by picking the 'Use this bucket to host static website' option and write index.html for the Index document (Jekyll generates this file by default, but double check your setup).
+1. Go to properties, and enable Logging by targeting the `logs.example.io` bucket
+2. Go to properties, enable the Static website hosting by picking the 'Use this bucket to host static website' option and write `index.html` for the Index document (Jekyll generates this file by default, but double check your setup).
 
 ![How to enable the static website hosting on the main bucket](/assets/images/posts/jekyll-amazon-guide/s3-bucket-static-website.png)
 
-Now make sure the www bucket redirects traffic to the main bucket:
-1. Go to properties, enable the Static website hosting by picking the 'Redirect requests' option and write the main bucket (example.io in our case) as targeting
+Now make sure the `www-bucket` redirects traffic to the main bucket:
+1. Go to properties, enable the Static website hosting by picking the 'Redirect requests' option and write the main bucket (`example.io` in our case) as targeting
 2. Optionally enable Logging on this bucket as well, as see above
 
 ![How to redirect traffic from www-bucket to main-bucket](/assets/images/posts/jekyll-amazon-guide/s3-bucket-redirect-to-main.png)
 
-Now we need to set up the proper permission on the main bucket and the www-bucket:
-1. Go the the main bucket, got to Permission and using the drop down menu, select the 'Bucket policy' option. Use the code below to allow public access to the objects stored. Make sure to replace example.io with your bucket name:
+Now we need to set up the proper permission on the main bucket and the `www-bucket`:
+1. Go the the main bucket, got to Permission and using the drop down menu, select the 'Bucket policy' option. Use the code below to allow public access to the objects stored. Make sure to replace `example.io` with your bucket name:
 
 ```
 {
@@ -83,19 +90,19 @@ Now we need to set up the proper permission on the main bucket and the www-bucke
     </CORSRule>
 </CORSConfiguration>
 ```
-3. Do the same for the www-bucket, just make sure to use the correct bucket name on the Bucket policy
+3. Do the same for the `www-bucket`, just make sure to use the correct bucket name on the Bucket policy
 
 And that it for the S3 setup. For now, just take a note of the endpoint and your region (which should be us-east-1)
 
 ## Access Management
 
-Quick link: [https://console.aws.amazon.com/iam/home?region=us-east-1](https://console.aws.amazon.com/iam/home?region=us-east-1)
+_Quick link: [https://console.aws.amazon.com/iam/home?region=us-east-1](https://console.aws.amazon.com/iam/home?region=us-east-1)_
 
 Now we are going to set up programmatic access via an API and a secret key, to ease the process of publishing to the main bucket
 
 1. Go to IAM, select Policies from the left hand-side menu and press Create policy
 2. Select the 'Create Your Own Policy' option
-3. Give it a name, like Example.io-Website-Access
+3. Give it a name, like `Example.io-Website-Access`
 4. Use the following policy document, just make sure to use the correct bucket name when you do so:
 
 ```
@@ -126,30 +133,30 @@ Now we are going to set up programmatic access via an API and a secret key, to e
 ```
 5. Validate and Create policy
 6. Now that we have a policy, we need to create a Group; go to the Groups and press New Group
-7. Give it a name like Websites-example.io and attach the above create policy to it.
+7. Give it a name like `Websites-example.io` and attach the above create policy to it.
 8. Now we need a user under this group; go to Users and press Add User
-9. Give it a name like example.io and check 'Programmatic access'
+9. Give it a name like `example.io` and check 'Programmatic access'
 10. On the next screen attach it to the newly created group and voila!
 
 Make sure you note down the access key id and the secret access key, as we will need it later.
 
 ## SSL certificate
 
-Quick link: [https://console.aws.amazon.com/acm/home?region=us-east-1](https://console.aws.amazon.com/acm/home?region=us-east-1)
+_Quick link: [https://console.aws.amazon.com/acm/home?region=us-east-1](https://console.aws.amazon.com/acm/home?region=us-east-1)_
 
-Amazon provides free SSL certificate, until the distribution is within the N. Virginia datacenter. I have not researched the exact reasons of this, but I learned this the hard way, as you won't receive any errors doing otherwise, but the SSL certificate simply won't work. So again, please make sure everything you create is within the us-east-1 region.
+Amazon provides free SSL certificate, until the distribution is within the N. Virginia datacenter. I have not researched the exact reasons of this, but I learned this the hard way, as you won't receive any errors doing otherwise, but the SSL certificate simply won't work. So again, please make sure everything you create is within the `us-east-1` region.
 
 1. Request a certificate
 2. Do not use a wildcard domain here - instead specify two domains:
-  - example.io
-  - www.example.io
-3. Review and request - you'll receive two emails (one for each domain) and make sure to accept them. If you are unsure what email was request sent to, you can check it on the main ACM page (usually the postmaster@example.io and the registered email for the domain is a good guess).
+  - `example.io`
+  - `www.example.io`
+3. Review and request - you'll receive two emails (one for each domain) and make sure to accept them. If you are unsure what email was request sent to, you can check it on the main ACM page (usually the `postmaster@example.io` and the registered email for the domain is a good guess).
 
 That's it, you won't have to note down anything here, but we needed the certificate to be ready for our next step.
 
 ## Cloudfront
 
-Quick link: [https://console.aws.amazon.com/cloudfront/home?region=us-east-1](https://console.aws.amazon.com/cloudfront/home?region=us-east-1)
+_Quick link: [https://console.aws.amazon.com/cloudfront/home?region=us-east-1](https://console.aws.amazon.com/cloudfront/home?region=us-east-1)_
 
 Cloudfront CDN will serve your files from your S3 in a faster, more secure and a more lightweight form by:
 - distributing geographically your content (not part of this guide)
@@ -160,7 +167,7 @@ Cloudfront CDN will serve your files from your S3 in a faster, more secure and a
 In order to start using it, we will need to create a so called distribution:
 
 1. Create a new distribution and select Web
-2. Don't use the drop down menu when selecting the Origin Domain name (very important, as then you won't be able to serve documents out of subfolders using the default index document e.g. https://example.io/blog/ would not work but https://example.io/blog/index.html would), but instead use the S3 endpoint noted down earlier:
+2. Don't use the drop down menu when selecting the Origin Domain name (very important, as then you won't be able to serve documents out of subfolders using the default index document e.g. `https://example.io/blog/` would not work but `https://example.io/blog/index.html` would), but instead use the S3 endpoint noted down earlier:
 
 ![How to setup a custom origin to your Cloudfront distribution](/assets/images/posts/jekyll-amazon-guide/cloudfront-setup-custom-origin.png)
 
@@ -179,7 +186,7 @@ Before we move on to setting up your hosted zone, note down the Distribution ID.
 
 ## Route 53
 
-Quick link: [https://console.aws.amazon.com/route53/home?region=us-east-1](https://console.aws.amazon.com/route53/home?region=us-east-1)
+_Quick link: [https://console.aws.amazon.com/route53/home?region=us-east-1](https://console.aws.amazon.com/route53/home?region=us-east-1)_
 
 Route 53 will be used to set up your DNS and A-records to `www` and the APEX domain. It will be the connecting clip between the end-users and your S3, by routing traffic to your Cloudfront distribution.
 
@@ -219,9 +226,9 @@ At this point, we are almost done, and we only need to have a working Jekyll sta
 
 ### s3_websites
 
-Quick link: [https://github.com/laurilehmijoki/s3_website](https://github.com/laurilehmijoki/s3_website)
+_Quick link: [https://github.com/laurilehmijoki/s3_website](https://github.com/laurilehmijoki/s3_website)_
 
-This is a ruby gem that will ease your pain of publishing your website to this Amazon AWS setup. You can either follow the README on the GitHub repository, but I will collect the steps down below with a recommended configuration to go with:
+This is a ruby gem that will ease your pain of publishing your website to this Amazon AWS setup. You can either follow the `README` on the GitHub repository, but I will collect the steps down below with a recommended configuration to go with:
 
 1. `s3_website cfg create`
 2. Open `s3_website.yml` with an editor and fill it out accordingly. Most of the information required has been noted down previously. Here's my recommended configuration to go with:
@@ -264,4 +271,8 @@ This is it! You know have a lightweight, secure, fast and scalable static page. 
 
 Now we have achieved everything using the Amazon stack and are ready to scale up with the matter of couple tweaks, if needed.
 
-Hope this guide served you well and helped you to set up your static website on Amazon AWS from zero to complete in under 20 minutes! If you have any corrections, questions, suggestions and just want to say hi - reach out to me on Twitter [@anthonymonori](https://www.twitter.com/anthonymonori).
+---
+
+Hope this guide served you well and helped you to set up your static website on Amazon AWS from zero to complete in under 20 minutes!
+
+If you have any corrections, questions, suggestions and just want to say hi - reach out to me on Twitter [@anthonymonori](https://www.twitter.com/anthonymonori).
