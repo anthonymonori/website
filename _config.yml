@@ -17,9 +17,6 @@ future: false
 markdown: kramdown
 highlighter: rouge
 
-# if you don't want comments in your posts, set to false
-disqus: false
-
 # if you don't have any of social below, comment the line
 #facebook: anthonymonori
 twitter: anthonymonori
