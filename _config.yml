@@ -48,11 +48,16 @@ authors:
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
 # normal = 560px / large = 810px
-width: normal
+width: large
 
 # if you don't need pagination, comment the *paginate* configs below
 # paginate: 5
 # paginate_path: "blog/:num/"
+
+# enable maps support using the jekyll-maps plugin
+maps:
+  google:
+    api_key: AIzaSyAm9Qr58HPVVr2FJ_Co7y5jb_Zz1jgZt-g
 
 # if you don't need projects, comment the *projects* configs below
 projects: true
@@ -91,6 +96,8 @@ gems:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-paginate
+  - jekyll-youtube
+  - jekyll-maps
 
 jekyll-mentions:
     base_url: https://twitter.com
