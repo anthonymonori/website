@@ -1,12 +1,11 @@
 ---
 title: "A personal guide to Budapest"
 layout: post
-date: 2017-02-29 00:00
+date: 2017-06-01 12:00
 headerImage: true
 tag:
 - personal
 blog: true
-star: true
 image: /assets/images/posts/budapest-guide/thumb-budapest.jpg
 author: anthonymonori
 description: With so many friends whom I know are visiting this city in the near future - I have put together a list of my favorite places in Budapest to see, taste and experience.
@@ -47,8 +46,9 @@ Budapest was always the center of the Hungarian literary life, and the signs of 
 - Igen (Italian, specialized on pizza, sliced)
 
 ### For the coffee coinosseur
-
-- 3rd wave places: Kontakt, Fekete, Espresso Embassy, Moricz Zsigmond korteren levok
+- Kontakt
+- Fekete
+- Espresso Embassy
 
 ### For the nature-lover
 - Zugliget Chairlift
@@ -69,3 +69,8 @@ Budapest was always the center of the Hungarian literary life, and the signs of 
 - Gellért Thermal Bath
 - New York Café
 - Rézkakas Bistro
+
+### Getting around
+- From/To the airport:
+- Using trams:
+- The metro system:
