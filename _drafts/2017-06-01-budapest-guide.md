@@ -1,10 +1,11 @@
 ---
 title: "A personal guide to Budapest"
 layout: post
-date: 2017-06-01 12:00
+date: 2017-11-01 12:00
 headerImage: true
 tag:
 - personal
+- travel
 blog: true
 image: /assets/images/posts/budapest-guide/thumb-budapest.jpg
 author: anthonymonori
