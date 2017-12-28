@@ -10,8 +10,8 @@ picture: assets/images/profile.png
 url: https://monori.me
 
 resume: true
-resume-external: true
-resume-url: https://google.com/?q=my+resume
+resume-external: false
+resume-url: /assets/resume.pdf
 
 
 permalink: /:title/
