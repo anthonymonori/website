@@ -1,5 +1,5 @@
 name: Antal János Monori
-bio: Kickass mobile developer living and working in Denmark 🇩🇰
+bio: Software developer living and working in Denmark 🇩🇰
 description: A playground of nerd who likes oversharing and speaking his mind out
 
 # if it's an external image, update below for true
@@ -9,9 +9,14 @@ picture: assets/images/profile.png
 
 url: https://monori.me
 
+resume: true
+resume-external: true
+resume-url: https://google.com/?q=my+resume
+
+
 permalink: /:title/
 
-show_drafts: true
+show_drafts: false
 future: false
 
 markdown: kramdown
@@ -22,12 +27,12 @@ twitter: anthonymonori
 linkedin: anthonymonori
 github: anthonymonori
 stackoverflow: 2759296/anthonymonori
-email: anthony@monori.me
+email: anthonymonori@gmail.com
 
 authors:
     anthonymonori:
         name: Antal János Monori
-        bio: Kickass Android developer living and working in Denmark 🇩🇰
+        bio: Software developer living and working in Denmark 🇩🇰
         external-image: false
         picture: assets/images/profile.png
         twitter: anthonymonori
@@ -62,15 +67,16 @@ sass:
     style: :compressed
 
 gems:
-  - jemoji
-  - jekyll-mentions
-  - jekyll-seo-tag
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-paginate
-  - jekyll-youtube
-  - jekyll-maps
+    - jemoji
+    - jekyll-mentions
+    - jekyll-seo-tag
+    - jekyll-feed
+    - jekyll-sitemap
+    - jekyll-gist
+    - jekyll-paginate
+    - jekyll-youtube
+    - jekyll-maps
+    - jekyll-redirect-from 
 
 jekyll-mentions:
     base_url: https://twitter.com
