@@ -4,7 +4,7 @@ layout: page
 ---
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
-A geek who navigates using zshell and git commit -am "all the time". I like open source software, to attend hackathons and I take pride in the code that I produce.
+A geek who navigates using zshell and `git commit -am "all the time"`. I like open source software, to attend hackathons and I take pride in the code that I produce.
 
 Currently working as a **Mobile App Developer for [The LEGO Group](https://lego.com)**, where I focus on creating creative experiences targeting kids through mobile devices. I wore many hats before at the company - from frontend-solutions, all the way to infrastructure development.
 
