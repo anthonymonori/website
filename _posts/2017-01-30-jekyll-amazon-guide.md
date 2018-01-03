@@ -6,7 +6,7 @@ headerImage: false
 tag:
 - guide
 blog: true
-star: true
+star: false
 author: anthonymonori
 description: Have a Jekyll-based static website running on AWS using S3 storage, Cloudfront CDN, Route 53 DNS and SSL in about 20 minutes.
 ---
