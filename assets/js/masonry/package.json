@@ -1,0 +1,34 @@
+{
+  "name": "masonry",
+  "description": "Templating middleware for embedded javascript templates.",
+  "keywords": [
+    "template",
+    "templating",
+    "ejs",
+    "middleware",
+    "express",
+    "connect"
+  ],
+  "version": "0.0.2",
+  "author": "Bradley Griffiths <bradley.griffiths@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/bradleyg/masonry.git"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "main": "./index.js",
+  "dependencies": {
+    "ejs": "0.7.1"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "request": "*",
+    "express": "*"
+  },
+  "engines": {
+    "node": ">= 0.6.0"
+  }
+}

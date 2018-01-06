@@ -1,0 +1,48 @@
+picture_path: shanghai-2017
+pictures:
+- filename: IMG_5557.jpg
+  original: IMG_5557-4784x3189.jpg
+  sizes: []
+  thumbnail: IMG_5557-thumbnail.jpg
+  title: Test title
+  caption: Test caption
+- filename: IMG_6112.jpg
+  original: IMG_6112-5184x3456.jpg
+  sizes: []
+  thumbnail: IMG_6112-thumbnail.jpg
+- filename: IMG_124031.jpg
+  original: IMG_124031-3024x4032.jpg
+  sizes: []
+  thumbnail: IMG_124031-thumbnail.jpg
+- filename: IMG_6023.jpg
+  original: IMG_6023-5184x3456.jpg
+  sizes: []
+  thumbnail: IMG_6023-thumbnail.jpg
+- filename: IMG_5349.jpg
+  original: IMG_5349-5184x3456.jpg
+  sizes: []
+  thumbnail: IMG_5349-thumbnail.jpg
+- filename: IMG_5492.jpg
+  original: IMG_5492-5063x3375.jpg
+  sizes: []
+  thumbnail: IMG_5492-thumbnail.jpg
+- filename: IMG_180622.jpg
+  original: IMG_180622-4032x3024.jpg
+  sizes: []
+  thumbnail: IMG_180622-thumbnail.jpg
+- filename: IMG_5626.jpg
+  original: IMG_5626-5078x3385.jpg
+  sizes: []
+  thumbnail: IMG_5626-thumbnail.jpg
+- filename: IMG_100510.jpg
+  original: IMG_100510-2820x3760.jpg
+  sizes: []
+  thumbnail: IMG_100510-thumbnail.jpg
+- filename: IMG_5597.jpg
+  original: IMG_5597-5184x3456.jpg
+  sizes: []
+  thumbnail: IMG_5597-thumbnail.jpg
+- filename: IMG_5328.jpg
+  original: IMG_5328-5184x3456.jpg
+  sizes: []
+  thumbnail: IMG_5328-thumbnail.jpg
