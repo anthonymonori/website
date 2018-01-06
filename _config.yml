@@ -54,6 +54,7 @@ maps:
 projects: true
 about: true
 blog: true
+gallery: true
 
 read-time: true
 show-tags: false
