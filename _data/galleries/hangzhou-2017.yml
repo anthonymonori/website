@@ -1,87 +1,70 @@
 picture_path: hangzhou-2017
 pictures:
 - filename: IMG_5910
-  original: IMG_5910-4669x3113.jpg
-  sizes:
-  - IMG_5910-1152x768.jpg
+  original: IMG_5910-1152x768.jpg
+  sizes: []  
   thumbnail: IMG_5910-thumbnail.jpg
 - filename: IMG_5817
-  original: IMG_5817-5184x3456.jpg
-  sizes:
-  - IMG_5817-1152x768.jpg
+  original: IMG_5817-1152x768.jpg
+  sizes: []
   thumbnail: IMG_5817-thumbnail.jpg
 - filename: IMG_0820
-  original: IMG_0820-3841x2880.jpg
-  sizes:
-  - IMG_0820-1152x864.jpg
+  original: IMG_0820-1152x864.jpg
+  sizes: []
   thumbnail: IMG_0820-thumbnail.jpg
 - filename: IMG_5976
-  original: IMG_5976-5184x3456.jpg
-  sizes:
-  - IMG_5976-1152x768.jpg
+  original: IMG_5976-1152x768.jpg
+  sizes: []
   thumbnail: IMG_5976-thumbnail.jpg
 - filename: IMG_0789
-  original: IMG_0789-3024x4032.jpg
-  sizes:
-  - IMG_0789-864x1152.jpg
+  original: IMG_0789-864x1152.jpg
+  sizes: []
   thumbnail: IMG_0789-thumbnail.jpg
 - filename: IMG_5946
-  original: IMG_5946-5184x3456.jpg
-  sizes:
-  - IMG_5946-1152x768.jpg
+  original: IMG_5946-1152x768.jpg
+  sizes: []
   thumbnail: IMG_5946-thumbnail.jpg
 - filename: IMG_5768
-  original: IMG_5768-5184x3456.jpg
-  sizes:
-  - IMG_5768-1152x768.jpg
+  original: IMG_5768-1152x768.jpg
+  sizes: []
   thumbnail: IMG_5768-thumbnail.jpg
 - filename: IMG_5840
-  original: IMG_5840-5184x3456.jpg
-  sizes:
-  - IMG_5840-1152x768.jpg
+  original: IMG_5840-1152x768.jpg
+  sizes: []
   thumbnail: IMG_5840-thumbnail.jpg
 - filename: IMG_5890
-  original: IMG_5890-5184x3456.jpg
-  sizes:
-  - IMG_5890-1152x768.jpg
+  original: IMG_5890-1152x768.jpg
+  sizes: []
   thumbnail: IMG_5890-thumbnail.jpg
 - filename: IMG_5925
-  original: IMG_5925-5184x3456.jpg
-  sizes:
-  - IMG_5925-1152x768.jpg
+  original: IMG_5925-1152x768.jpg
+  sizes: []
   thumbnail: IMG_5925-thumbnail.jpg
 - filename: IMG_1066
-  original: IMG_1066-3918x2939.jpg
-  sizes:
-  - IMG_1066-1152x864.jpg
+  original: IMG_1066-1152x864.jpg
+  sizes: []
   thumbnail: IMG_1066-thumbnail.jpg
 - filename: IMG_1060
-  original: IMG_1060-3788x2841.jpg
-  sizes:
-  - IMG_1060-1152x864.jpg
+  original: IMG_1060-1152x864.jpg
+  sizes: []
   thumbnail: IMG_1060-thumbnail.jpg
 - filename: IMG_5980
-  original: IMG_5980-5184x3456.jpg
-  sizes:
-  - IMG_5980-1152x768.jpg
+  original: IMG_5980-1152x768.jpg
+  sizes: []
   thumbnail: IMG_5980-thumbnail.jpg
 - filename: IMG_6000
-  original: IMG_6000-5184x3456.jpg
-  sizes:
-  - IMG_6000-1152x768.jpg
+  original: IMG_6000-1152x768.jpg
+  sizes: []
   thumbnail: IMG_6000-thumbnail.jpg
 - filename: IMG_5951
-  original: IMG_5951-5184x3456.jpg
-  sizes:
-  - IMG_5951-1152x768.jpg
+  original: IMG_5951-1152x768.jpg
+  sizes: []
   thumbnail: IMG_5951-thumbnail.jpg
 - filename: IMG_5950
-  original: IMG_5950-5184x3456.jpg
-  sizes:
-  - IMG_5950-1152x768.jpg
+  original: IMG_5950-1152x768.jpg
+  sizes: []
   thumbnail: IMG_5950-thumbnail.jpg
 - filename: IMG_5988
-  original: IMG_5988-5184x3456.jpg
-  sizes:
-  - IMG_5988-1152x768.jpg
+  original: IMG_5988-1152x768.jpg
+  sizes: []
   thumbnail: IMG_5988-thumbnail.jpg
