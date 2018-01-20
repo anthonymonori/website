@@ -1,6 +1,6 @@
 ---
 layout: gallery
-title: Trip to Shanghai 🇨🇳
+title: Shanghai 2017 🇨🇳
 support: [jquery, gallery]
 description: Captured 📸 some cool city shots while visiting in March 2017
 ---

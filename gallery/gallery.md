@@ -26,7 +26,3 @@ permalink: /gallery/
 {% assign count = 0 %}
 {% endif %}
 {% endfor %}
-
-{% if count != 1 %}
-<p> Sorry, no galleries found at the moment ;(</p>
-{% endif %}

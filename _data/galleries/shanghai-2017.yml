@@ -4,7 +4,6 @@ pictures:
   original: IMG_5557-4784x3189.jpg
   sizes: 
   - IMG_5557-1152x768.jpg
-  - IMG_5557-4784x3189.jpg
   title: People's Republic of China
   thumbnail: IMG_5557-thumbnail.jpg
   caption: People's Square was full with police forces and it's heavily monitored due to the Govt. seat building of the Chinese communist government being located there.
@@ -12,7 +11,6 @@ pictures:
   original: IMG_6112-5184x3456.jpg
   sizes: 
   - IMG_6112-1152x768.jpg
-  - IMG_6112-5184x3456.jpg
   thumbnail: IMG_6112-thumbnail.jpg
   title: Beautiful rooftops
   caption: Probably one of the most distinct features of the Chinese Imperial architecture is the horizontal emphasis of the rooftops.
@@ -20,7 +18,6 @@ pictures:
   original: IMG_124031-3024x4032.jpg
   sizes:
   - IMG_124031-864x1152.jpg
-  - IMG_124031-3024x4032.jpg
   thumbnail: IMG_124031-thumbnail.jpg
   title: Skyline
   caption: The Pudong skyline on our way back to the hotel.
@@ -28,7 +25,6 @@ pictures:
   original: IMG_6023-5184x3456.jpg
   sizes:
   - IMG_6023-1152x768.jpg
-  - IMG_6023-5184x3456.jpg
   thumbnail: IMG_6023-thumbnail.jpg
   title: Skyline
   caption: My favorite shot of the Shanghai Skyline!
@@ -36,7 +32,6 @@ pictures:
   original: IMG_5349-5184x3456.jpg
   sizes:
   - IMG_5349-1152x768.jpg
-  - IMG_5349-5184x3456.jpg
   thumbnail: IMG_5349-thumbnail.jpg
   title: Bustling streets
   caption: Loved the bustling streets but getting used to the chaos of what traffic is, is not easy.
@@ -44,7 +39,6 @@ pictures:
   original: IMG_5492-5063x3375.jpg
   sizes:
   - IMG_5492-1152x768.jpg
-  - IMG_5492-5063x3375.jpg
   thumbnail: IMG_5492-thumbnail.jpg
   title: Shops everywhere
   caption: One of the adjacent little streets to Nanjing Rd filled with shops and restaurants of all kind.
@@ -52,7 +46,6 @@ pictures:
   original: IMG_180622-4032x3024.jpg
   sizes:
   - IMG_180622-1152x864.jpg
-  - IMG_180622-4032x3024.jpg
   thumbnail: IMG_180622-thumbnail.jpg
   title: Shanghai during sunset
   caption: Sunset as seen from our hotel room.
@@ -60,7 +53,6 @@ pictures:
   original: IMG_5626-5078x3385.jpg
   sizes:
   - IMG_5626-1152x768.jpg
-  - IMG_5626-5078x3385.jpg
   thumbnail: IMG_5626-thumbnail.jpg
   title: Skyline
   caption: Pudong skyline as seen from Hongkou.
@@ -68,15 +60,13 @@ pictures:
   original: IMG_5597-5184x3456.jpg
   sizes:
   - IMG_5597-1152x768.jpg
-  - IMG_5597-5184x3456.jpg
   thumbnail: IMG_5597-thumbnail.jpg
   title: Alley-ways
   caption: One of the many back-alleys that are not too tourist friendly, but capture the daily life of Shanghaiese people.
 - filename: IMG_5328.jpg
   original: IMG_5328-5184x3456.jpg
   sizes:
-  - IMG_5328-.jpg
-  - IMG_5328-5184x3456.jpg
+  - IMG_5328-1152x768.jpg
   thumbnail: IMG_5328-thumbnail.jpg
   title: Skyline
   caption: Pudong's famous skyline from the top of SWFC. This place was just a field 30 years ago.
@@ -84,7 +74,6 @@ pictures:
   original: IMG_5622-5010x3340.jpg
   sizes:
   - IMG_5622-1152x768.jpg
-  - IMG_5622-5010x3340.jpg
   thumbnail: IMG_5622-thumbnail.jpg
   title: Scooter-craze
   caption: Everybody is riding a scooter here (besides cars and bikes), but they wear these funny protective gloves on top to shield their hands from the wind and cold.
