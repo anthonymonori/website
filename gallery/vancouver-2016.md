@@ -1,7 +1,7 @@
 ---
 layout: gallery
 title: Vancouver 2016 🇨🇦
-image: /assets/gallery/vancouver-2016/IMG_0461-thumbnail.jpg
+image: assets/gallery/vancouver-2016/IMG_0461-thumbnail.jpg
 support: [jquery, gallery]
 description: First time entering North America, and I somehow ended in it's best part! ⛰🌁🌇🦌🏞
 ---

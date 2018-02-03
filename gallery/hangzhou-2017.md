@@ -1,6 +1,7 @@
 ---
 layout: gallery
 title: Hangzhou 2017 🇨🇳
+image: assets/gallery/hangzhou-2017/IMG_5950-thumbnail.jpg
 support: [jquery, gallery]
 description: Wondered around the sacred lakes ⛲️ and the buzzing city of Hangzhou in March 2017
 ---
