@@ -1,6 +1,7 @@
 ---
 layout: gallery
 title: Seattle 2016 🇺🇸
+image: assets/gallery/seattle-2016/IMG_1408-thumbnail.jpg
 support: [jquery, gallery]
 description: Spent a rainy weekend exploring some of Seattle's quirks and neighborhoods 🏙
 ---

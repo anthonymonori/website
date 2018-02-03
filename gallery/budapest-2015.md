@@ -1,6 +1,7 @@
 ---
 layout: gallery
 title: Budapest 2015 🇭🇺
+image: assets/gallery/budapest-2015/IMG_0081-thumbnail.jpg
 support: [jquery, gallery]
 description: My first ever photoset with the shiny new camera I bought weeks back
 ---
