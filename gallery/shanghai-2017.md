@@ -1,6 +1,7 @@
 ---
 layout: gallery
 title: Shanghai 2017 🇨🇳
+image: assets/gallery/shanghai-2017/IMG_6023-thumbnail.jpg
 support: [jquery, gallery]
 description: Captured 📸 some cool city shots while visiting in March 2017
 ---

@@ -13,7 +13,6 @@ resume: true
 resume-external: false
 resume-url: assets/resume-012018.pdf
 
-
 permalink: /:title/
 
 show_drafts: false
@@ -28,6 +27,20 @@ linkedin: anthonymonori
 github: anthonymonori
 stackoverflow: 2759296/anthonymonori
 email: anthonymonori@gmail.com
+
+twitter:
+    username: anthonymonori
+
+facebook:
+    app_id: 1549357191985720
+
+social:
+    links:
+        - https://twitter.com/anthonymonori
+        - https://www.facebook.com/anthonymonori
+        - https://www.linkedin.com/in/anthonymonori
+        - https://github.com/anthonymonori
+        - https://keybase.io/anthonymonori
 
 authors:
     anthonymonori:
@@ -45,11 +58,6 @@ width: large
 # if you don't need pagination, comment the *paginate* configs below
 # paginate: 5
 # paginate_path: "blog/:num/"
-
-# enable maps support using the jekyll-maps plugin
-maps:
-  google:
-    api_key: AIzaSyAm9Qr58HPVVr2FJ_Co7y5jb_Zz1jgZt-g
 
 projects: true
 about: true
