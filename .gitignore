@@ -5,3 +5,4 @@ npm-debug.log
 Gemfile.lock
 s3_website.yml
 .DS_Store
+_config.yml
