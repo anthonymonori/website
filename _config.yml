@@ -83,8 +83,6 @@ gems:
     - jekyll-sitemap
     - jekyll-gist
     - jekyll-paginate
-    - jekyll-youtube
-    - jekyll-maps
     - jekyll-redirect-from 
 
 jekyll-mentions:
