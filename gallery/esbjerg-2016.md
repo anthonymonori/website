@@ -1,6 +1,8 @@
 ---
 layout: gallery
-title: Esbjerg 🇩🇰
+title: Esbjerg 2016 🇩🇰
 support: [jquery, gallery]
-description: To be added...
+description: 🍃 Strolling through the beautiful fall Danish landscape and countryside 🍂
 ---
+
+{% include gallery-layout.html gallery=site.data.galleries.esbjerg-2016 %}

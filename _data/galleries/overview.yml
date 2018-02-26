@@ -27,6 +27,13 @@
     sizes: []
     thumbnail: IMG_5950-thumbnail.jpg
 - 
+  title: Esbjerg 2016 🇩🇰
+  directory: esbjerg-2016
+  preview:
+    original: IMG_20161203_133537-1152x864.jpg
+    sizes: []
+    thumbnail: IMG_20161203_133537-thumbnail.jpg
+- 
   title: Seattle 2016 🇺🇸
   directory: seattle-2016
   preview:

@@ -1,6 +1,6 @@
 ---
 layout: gallery
-title: Copenhagen 🇩🇰
+title: Copenhagen 2016 🇩🇰
 support: [jquery, gallery]
 description: On a cold and snowy January in Copenhagen... ❄️
 ---
