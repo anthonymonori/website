@@ -1,5 +1,14 @@
 # monori.me
 
+## Install
+
+```Shell
+gem install bundler
+bundle install
+brew install yarn
+yarn install
+```
+
 ## Build
 
 ```Shell

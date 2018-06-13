@@ -61,7 +61,7 @@ The guys from YES Studio, Simon and James, introduced us to their portfolio proj
 
 Last, but not least, [Ken Wong](https://twitter.com/kenwongart), Lead Designer at Ustwo (they created Monument Valley and many other great stuff - check them out [here](http://ustwo.com/what-we-do)) introduced us to their latest VR experience that they have been working on for the past year and so in collaboration with Samsung and their latest consumer VR set, on a game called Lands’ End.
 
-<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">.<a href="https://twitter.com/kenwongart">@kenwongart</a> showing Land&#39;s End 1st time publicly. An exclusive VR game from <a href="https://twitter.com/ustwo">@ustwo</a>, the creators of Monument Valley <a href="https://t.co/LKGIAqFdOM">pic.twitter.com/LKGIAqFdOM</a></p>&mdash; Antal János Monori (@anthonymonori) <a href="https://twitter.com/anthonymonori/status/664859399199006720">November 12, 2015</a></blockquote>
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">.<a href="https://twitter.com/kenwongart">@kenwongart</a> showing Land&#39;s End 1st time publicly. An exclusive VR game from <a href="https://twitter.com/ustwo">@ustwo</a>, the creators of Monument Valley <a href="https://t.co/LKGIAqFdOM">pic.twitter.com/LKGIAqFdOM</a></p>&mdash; Antal János M. (@antalindisguise) <a href="https://twitter.com/anthonymonori/status/664859399199006720">November 12, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 After that, we discussed the issues and milestones in VR tech, and he told us about their observations during the development phase of the game.

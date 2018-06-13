@@ -2,16 +2,16 @@
     padding: 3rem 0
     border-bottom: 1px solid $epsilon
     border-top: 1px solid $epsilon
-    max-width: 100%
     margin: 4rem auto 0
 
     > .toleft > .selfie
+        float: top
         width: 90%
         border-radius: 100%
 
     > .toright > .name,
     > .toright > .bio
-        width: 60%
+        width: 20%
         display: inline-block
 
     > .toright > .name
@@ -32,21 +32,23 @@
         font-family: $fontSans
         font-weight: 300
         color: #111
+        display: block
         font-size: 1.3rem
-        text-align: justify
         line-height: 1.5
-        margin: 0
+        margin: 6px 0 0 8px
 
         @media #{$mobile}
-            width: 100%
+            width: 20%
             display: block
+            margin: 0
 
         @media #{$tablet}
-            width: 100%
+            width: 40%
             display: block
+            margin: 0
 
     > .toleft
-        width: 10%
+        width: 20%
         display: inline-block
 
         @media #{$mobile}
@@ -56,9 +58,8 @@
             width: 20%
 
     > .toright
-        width: 89%
+        width: 80%
         display: inline-block
-        vertical-align: top
 
         @media #{$mobile}
             width: 78%
