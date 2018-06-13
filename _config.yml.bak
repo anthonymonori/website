@@ -1,0 +1,76 @@
+name: Antal János Monori
+bio: Software engineer interested in mobile development
+description: Thoughts about crafting good code 💻 and making great coffee ☕️
+
+# if it's an external image, update below for true
+# better with square images
+external-image: false
+picture: assets/images/profile.png
+
+url: https://monori.me
+
+resume: true
+resume-external: false
+resume-url: assets/resume-012018.pdf
+
+permalink: /:title/
+
+show_drafts: false
+future: false
+
+markdown: kramdown
+highlighter: rouge
+
+# if you don't have any of social below, comment the line
+twitter: anthonymonori
+linkedin: anthonymonori
+github: anthonymonori
+stackoverflow: 2759296/anthonymonori
+email: anthonymonori@gmail.com
+
+authors:
+    anthonymonori:
+        name: Antal János Monori
+        bio: Software developer living and working in Denmark 🇩🇰
+        external-image: false
+        picture: assets/images/profile.png
+        twitter: anthonymonori
+
+# do you want a larger site? change the option below
+# options: [normal, large] | default: normal
+# normal = 560px / large = 810px
+width: large
+
+# if you don't need pagination, comment the *paginate* configs below
+# paginate: 5
+# paginate_path: "blog/:num/"
+
+projects: true
+about: true
+blog: true
+gallery: true
+
+read-time: true
+show-tags: false
+related: true
+blog-nav-links: false
+show-author: true
+animation: false
+
+sass:
+    sass_dir: _sass
+    style: :compressed
+
+gems:
+    - jemoji
+    - jekyll-mentions
+    - jekyll-seo-tag
+    - jekyll-feed
+    - jekyll-sitemap
+    - jekyll-gist
+    - jekyll-paginate
+    - jekyll-redirect-from 
+
+jekyll-mentions:
+    base_url: https://twitter.com
+
