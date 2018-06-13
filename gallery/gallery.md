@@ -6,7 +6,7 @@ permalink: /gallery/
 
 <h1>{{ page.title }}</h1>
 
-<p>Here you can see some of my albums</p>
+<p>I've been lucky enough to travel to some beautiful places, and in order to document that, I started taking amateur photographs which you can find below 👇</p>
 
 {% assign count = 0 %}
 {% assign align = "left" %}
