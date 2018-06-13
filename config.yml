@@ -1,5 +1,5 @@
-name: Antal János Monori
-bio: Software developer living and working in Denmark 🇩🇰
+name: 👋  from Antal
+bio: Software engineer @Skyscanner | Previously @LEGO_Group
 description: A playground of nerd who likes oversharing and speaking his mind out
 
 # if it's an external image, update below for true
@@ -11,7 +11,7 @@ url: https://monori.me
 
 resume: true
 resume-external: false
-resume-url: assets/resume-012018.pdf
+resume-url: mailto:anthonymonori+resume@gmail.com?subject=resume-request
 
 
 permalink: /:title/
@@ -23,19 +23,18 @@ markdown: kramdown
 highlighter: rouge
 
 # if you don't have any of social below, comment the line
-twitter: anthonymonori
-linkedin: anthonymonori
-github: anthonymonori
-stackoverflow: 2759296/anthonymonori
-email: anthonymonori@gmail.com
+twitter: antalindisguise
+linkedin: hifromantal
+github: antalindisguise
+stackoverflow: 2759296/captainserious
 
 authors:
     anthonymonori:
-        name: Antal János Monori
-        bio: Software developer living and working in Denmark 🇩🇰
+        name: Antal János M.
+        bio: Software engineer @Skyscanner | Previously @LEGO_Group
         external-image: false
         picture: assets/images/profile.png
-        twitter: anthonymonori
+        twitter: antalindisguise
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
@@ -45,11 +44,6 @@ width: large
 # if you don't need pagination, comment the *paginate* configs below
 # paginate: 5
 # paginate_path: "blog/:num/"
-
-# enable maps support using the jekyll-maps plugin
-maps:
-  google:
-    api_key: AIzaSyAm9Qr58HPVVr2FJ_Co7y5jb_Zz1jgZt-g
 
 projects: true
 about: true
@@ -67,7 +61,7 @@ sass:
     sass_dir: _sass
     style: :compressed
 
-gems:
+plugins:
     - jemoji
     - jekyll-mentions
     - jekyll-seo-tag
@@ -76,7 +70,6 @@ gems:
     - jekyll-gist
     - jekyll-paginate
     - jekyll-youtube
-    - jekyll-maps
     - jekyll-redirect-from 
 
 jekyll-mentions:

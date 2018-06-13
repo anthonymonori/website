@@ -4,7 +4,7 @@
   "description": "Source code for my personal website",
   "main": "index.js",
   "repository": "git@github.com:anthonymonori/monori-me.git",
-  "author": "Antal János Monori <anthonymonori@gmail.com>",
+  "author": "Antal János M. <anthonymonori@gmail.com>",
   "license": "BSD-3-Clause",
   "private": true,
   "dependencies": {
