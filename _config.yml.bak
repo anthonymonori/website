@@ -1,6 +1,6 @@
 name: Antal János Monori
-bio: Software developer living and working in Denmark 🇩🇰
-description: A playground of nerd who likes oversharing and speaking his mind out
+bio: Software engineer interested in mobile development
+description: Thoughts about crafting good code 💻 and making great coffee ☕️
 
 # if it's an external image, update below for true
 # better with square images
@@ -12,7 +12,6 @@ url: https://monori.me
 resume: true
 resume-external: false
 resume-url: assets/resume-012018.pdf
-
 
 permalink: /:title/
 
@@ -46,11 +45,6 @@ width: large
 # paginate: 5
 # paginate_path: "blog/:num/"
 
-# enable maps support using the jekyll-maps plugin
-maps:
-  google:
-    api_key: AIzaSyAm9Qr58HPVVr2FJ_Co7y5jb_Zz1jgZt-g
-
 projects: true
 about: true
 blog: true
@@ -75,9 +69,8 @@ gems:
     - jekyll-sitemap
     - jekyll-gist
     - jekyll-paginate
-    - jekyll-youtube
-    - jekyll-maps
     - jekyll-redirect-from 
 
 jekyll-mentions:
     base_url: https://twitter.com
+
