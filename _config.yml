@@ -1,5 +1,5 @@
-name: 👋  from Antal
-bio: Software engineer @Skyscanner | Previously @LEGO_Group
+name: Antal János Monori
+bio: Senior software engineer @Skyscanner | Previously @LEGO_Group | Part time @thirdwavelist
 description: Thoughts about crafting good code 💻 and making great coffee ☕️
 
 # if it's an external image, update below for true
@@ -13,7 +13,6 @@ resume: true
 resume-external: false
 resume-url: mailto:anthonymonori+resume@gmail.com?subject=resume-request
 
-
 permalink: /:title/
 
 show_drafts: false
@@ -26,12 +25,12 @@ highlighter: rouge
 twitter: antalindisguise
 linkedin: hifromantal
 github: antalindisguise
-stackoverflow: 2759296/captainserious
+stackoverflow: 2759296/anthonymonori
 
 authors:
     anthonymonori:
-        name: Antal János M.
-        bio: Software engineer @Skyscanner | Previously @LEGO_Group
+        name: Antal János Monori
+        bio: Senior software engineer @Skyscanner | Previously @LEGO_Group | Part time @thirdwavelist
         external-image: false
         picture: assets/images/profile.png
         twitter: antalindisguise
