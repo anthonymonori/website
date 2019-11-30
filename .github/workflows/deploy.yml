@@ -16,3 +16,5 @@ jobs:
       uses: gha-utilities/jekyll-build@v0.0.1
     - name: Firebase Deploy
       uses: jakejarvis/firebase-deploy-action@v0.1.0
+      env:
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
