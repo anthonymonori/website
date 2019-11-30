@@ -1,6 +1,6 @@
-name: Jekyll site CI
+name: Jekyll build
 
-on: [push]
+on: [pull_request]
 
 jobs:
   build:
