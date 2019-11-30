@@ -20,9 +20,3 @@ jekyll build --watch
 ```Shell
 jekyll serve
 ```
-
-## Deploy
-
-```Shell
-s3_website push
-```
