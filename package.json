@@ -6,5 +6,8 @@
   "repository": "git@github.com:antalindisguise/monori-me.git",
   "author": "Antal János M. <anthonymonori@gmail.com>",
   "license": "BSD-3-Clause",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "firebase-tools": "^7.8.1"
+  }
 }
