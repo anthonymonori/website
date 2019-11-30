@@ -1,16 +1,10 @@
 {
   "name": "monori-me",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Source code for my personal website",
   "main": "index.js",
-  "repository": "git@github.com:anthonymonori/monori-me.git",
+  "repository": "git@github.com:antalindisguise/monori-me.git",
   "author": "Antal János M. <anthonymonori@gmail.com>",
   "license": "BSD-3-Clause",
-  "private": true,
-  "dependencies": {
-    "isotope": "^1.0.0-alpha.3",
-    "jquery": "^3.2.1",
-    "lightgallery": "^1.6.6",
-    "masonry": "^0.0.2"
-  }
+  "private": true
 }
