@@ -5,8 +5,6 @@
 ```Shell
 gem install bundler
 bundle install
-brew install yarn
-yarn install
 ```
 
 ## Build
