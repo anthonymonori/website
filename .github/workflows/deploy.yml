@@ -22,6 +22,8 @@ jobs:
         path: ${{ github.workspace }}/_site
         key: ${{ GITHUB_ACTION }}-output
   deploy:
+    runs-on: ubuntu-latest
+    steps:
     - name: Load cache
       if: steps.jekyll-cache.outputs.cache-hit != 'true'
       run: |
