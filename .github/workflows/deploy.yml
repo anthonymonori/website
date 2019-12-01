@@ -1,4 +1,4 @@
-name: Deploy
+name: Build & Deploy
 
 on: [pull_request] 
 #  push:
@@ -7,9 +7,7 @@ on: [pull_request]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v1
     - name: Build the site in the jekyll/builder container
@@ -17,6 +15,21 @@ jobs:
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+    - name: Cache _site
+      id: jekyll-cache
+      uses: actions/cache@v1
+      with:
+        path: ${{ github.workspace }}/_site
+        key: ${{ GITHUB_ACTION }}-output
+  deploy:
+    - name: Check cache and re-build if necessary
+      if: steps.jekyll-cache.outputs.cache-hit != 'true'
+      run: |
+        docker run \
+        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+    - name: Set working dir
+      run: cd ${{ github.workspace }}/_site
     - name: Firebase Deploy
       uses: jakejarvis/firebase-deploy-action@v0.1.0
       env:
