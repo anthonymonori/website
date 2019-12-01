@@ -18,6 +18,6 @@ jobs:
     - name: Firebase Deploy
       uses: jakejarvis/firebase-deploy-action@v0.1.0
       with:
-        args: --message "Deployed via GitHub Actions" --path ${{ github.workspace }}/_site
+        args: --message "Deployed via GitHub Actions" --public ${{ github.workspace }}/_site
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
