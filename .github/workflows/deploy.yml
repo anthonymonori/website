@@ -6,7 +6,7 @@ on: [pull_request]
 #    - master
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -15,24 +15,9 @@ jobs:
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
-    - name: Cache _site
-      id: jekyll-cache
-      uses: actions/cache@v1
-      with:
-        path: ${{ github.workspace }}/_site
-        key: ${{ hashFiles('**/package-lock.json') }}
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Load cache
-      if: steps.jekyll-cache.outputs.cache-hit != 'true'
-      run: |
-        docker run \
-        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
-    - name: Set working dir
-      run: cd ${{ github.workspace }}/_site
     - name: Firebase Deploy
       uses: jakejarvis/firebase-deploy-action@v0.1.0
+      with:
+        args: --message "Deployed via GitHub Actions" --path ${{ github.workspace }}/_site
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
