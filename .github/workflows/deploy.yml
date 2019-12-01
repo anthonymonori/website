@@ -22,7 +22,7 @@ jobs:
         path: ${{ github.workspace }}/_site
         key: ${{ GITHUB_ACTION }}-output
   deploy:
-    - name: Check cache and re-build if necessary
+    - name: Load cache
       if: steps.jekyll-cache.outputs.cache-hit != 'true'
       run: |
         docker run \
