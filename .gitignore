@@ -10,6 +10,5 @@ _config.yml
 .jekyll-cache
 .firebase
 .firebaserc
-firebase.json
 _data/
 assets/gallery
