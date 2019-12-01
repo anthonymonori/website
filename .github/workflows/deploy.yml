@@ -15,10 +15,10 @@ jobs:
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
-    - name: Deploy to Firebase
+    - name: Deploy to Firebase Hosting
       uses: w9jds/firebase-action@v1.1.0
       with:
-        args: deploy -m "Deployed via GitHub Action"
+        args: deploy
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
