@@ -17,8 +17,6 @@ jobs:
         jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
     - name: Firebase Deploy
       uses: jakejarvis/firebase-deploy-action@v0.1.0
-      with:
-        args: -m "Deployed via GitHub Actions"
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
