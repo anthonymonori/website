@@ -20,7 +20,7 @@ jobs:
       uses: actions/cache@v1
       with:
         path: ${{ github.workspace }}/_site
-        key: ${{ GITHUB_ACTION }}-output
+        key: ${{ hashFiles('**/package-lock.json') }}
   deploy:
     runs-on: ubuntu-latest
     steps:
