@@ -274,5 +274,3 @@ Now we have achieved everything using the Amazon stack and are ready to scale up
 ---
 
 Hope this guide served you well and helped you to set up your static website on Amazon AWS from zero to complete in under 20 minutes!
-
-If you have any corrections, questions, suggestions and just want to say hi - reach out to me on Twitter [@anthonymonori](https://www.twitter.com/anthonymonori).
