@@ -49,8 +49,8 @@ read-time: true
 show-tags: false
 related: true
 blog-nav-links: false
-show-author: true
-animation: false
+show-share: true
+animation: true
 
 sass:
     sass_dir: _sass
