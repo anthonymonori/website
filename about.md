@@ -2,7 +2,6 @@
 title: About
 layout: page
 ---
-![Profile Image]({{ site.url }}/{{ site.picture }})
 
 I'm constantly looking for new challenges and opportunities, so please feel free to reach out to me. Let it be a question regarding code, or any of the interests that I have - I would be open to start a discussion with You!
 
