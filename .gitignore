@@ -12,3 +12,4 @@ _config.yml
 .firebaserc
 _data/
 assets/gallery
+firebase-debug.log

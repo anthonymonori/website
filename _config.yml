@@ -1,17 +1,13 @@
 name: Antal János Monori
-bio: Senior software engineer @Skyscanner | Previously @LEGO_Group | Part time @thirdwavelist
-description: Thoughts about crafting good code 💻 and making great coffee ☕️
+bio: Senior software engineer @Skyscanner | Previously at LEGO
+description: Thoughts about crafting good code and making great coffee ☕️
 
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/images/profile.png
+picture: assets/images/profile.jpg
 
 url: https://monori.me
-
-resume: true
-resume-external: false
-resume-url: mailto:anthonymonori+resume@gmail.com?subject=resume-request
 
 permalink: /:title/
 
@@ -22,18 +18,19 @@ markdown: kramdown
 highlighter: rouge
 
 # if you don't have any of social below, comment the line
-twitter: antalindisguise
+twitter: hifromantal
 linkedin: hifromantal
-github: antalindisguise
+github: anthonymonori
 stackoverflow: 2759296/anthonymonori
+email: anthonymonori@gmail.com
 
 authors:
     anthonymonori:
         name: Antal János Monori
-        bio: Senior software engineer @Skyscanner | Previously @LEGO_Group | Part time @thirdwavelist
+        bio: Senior software engineer @Skyscanner | Previously at LEGO
         external-image: false
-        picture: assets/images/profile.png
-        twitter: antalindisguise
+        picture: assets/images/profile.jpg
+        twitter: hifromantal
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
