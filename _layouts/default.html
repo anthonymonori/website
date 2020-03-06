@@ -12,6 +12,8 @@ layout: compress
 	<meta name=description content="{{ site.bio }}">
 	<meta name=author content="{{ site.name }}">
 
+	<link rel="manifest" href="{{ site.url }}/assets/manifest.json">
+
 	{% seo %}
 
 	{% include favicon.html %}
@@ -28,15 +30,11 @@ layout: compress
 	<script src="/assets/js/darkmode-js@1.5.5/darkmode-js.min.js"></script>
 	{% endif %}
 
-	<!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
-	<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
 	<script defer src="/__/firebase/7.5.0/firebase-app.js"></script>
-
-	<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
 	<script defer src="/__/firebase/7.5.0/firebase-analytics.js"></script>
-
-	<!-- Initialize Firebase -->
 	<script defer src="/__/firebase/init.js"></script>
+
+	<script async src="/assets/js/sw/init.js"></script>
 </head>
 <body>
 	{% if site.dark-mode-switch %}
