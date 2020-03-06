@@ -4,18 +4,28 @@ body, html
 body
 	line-height: 1
 	font: 16px $fontSans
-	color: $alpha
+
+.title h1
+	color: #222
+
+.description h2
+	color: #222
+
+.darkmode--activated h3.title
+	color: #ddd
+
+h3.title
+	color: #111
 
 h1, h2, h3, h4
 	font-family: $fontSans
-	color: $beta
+	color: #111
 	-webkit-font-smoothing: antialiased
 	text-rendering: optimizeLegibility
 
 h1
 	font-size: 3rem
 	letter-spacing: -1px
-	color: $beta
 	font-weight: 700
 
 h2
@@ -28,12 +38,11 @@ h4
 	font-size: 1.6rem
 
 a
-	color: $delta
-	text-decoration: underline
+	color: black
 
 p
 	line-height: 1.7
-	color: $alpha
+	color: #666
 	font-weight: 300
 	margin-bottom: 20px
 	letter-spacing: 0.4px
@@ -41,16 +50,19 @@ p
 	@media #{$mobile}
 		letter-spacing: 0.2px
 
+.darkmode--activated
+	color: white
+
 strong
 	font-weight: 400
-	color: #000
+	color: black
 
 ul,
 ol
 	li
 		line-height: 2.4rem
 		font-weight: 300
-		color: $alpha
+		color: #666
 
 img,
 pre,
@@ -70,7 +82,7 @@ figcaption
 	width: 100%
 	text-align: center
 	font-size: 1.3rem
-	color: $gama
+	color: #aaa
 	font-weight: 300
 
 	@media #{$mobile}
@@ -97,7 +109,8 @@ tt
 	font-family: $fontMonospace
 	font-size: 12px
 	line-height: 20px
-	background: #fff
+	color: black
+	background: white
 	border-radius: 2px
 	border-radius: 2px
 
@@ -110,8 +123,9 @@ pre
 	font-size: 1.2rem
 	line-height: 2rem
 	overflow: auto
-	background: #fff
-	border: 1px solid $epsilon
+	color: black
+	background: white
+	border: 1px solid #ededed
 	border-radius: 2px
 
 .wrapper-normal,

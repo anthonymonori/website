@@ -50,7 +50,8 @@ show-tags: false
 related: true
 blog-nav-links: false
 show-share: true
-animation: true
+animation: false
+dark-mode-switch: true
 
 sass:
     sass_dir: _sass
