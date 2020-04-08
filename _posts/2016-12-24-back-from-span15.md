@@ -1,7 +1,7 @@
 ---
 title: "Back from #SPAN15"
 layout: post
-date: 2016-12-24 16:00
+date: 2015-11-20 15:18:32
 headerImage: true
 tag:
 - conference
@@ -11,9 +11,6 @@ author: anthonymonori
 description: SP- Conversations about design and technology -AN coming over the pond for the first time bringing talents together for a day of conversation about design and tech.
 ---
 
-_Please note that this blog-post was originally posted on 2015-11-20 15:18:32 on my previous blog._
-
-___
 
 SPAN design conference is an initiative by the [Google Design team](https://design.google.com) with the goal of bringing together the community and starting a conversation around design and technology. It started out as a conference called FORM, the previous year, in San Fransisco. They built upon that experience and re-branded the conference to different locations. This year, one was taking place in New York, while the other one in London.
 
@@ -23,12 +20,12 @@ Luna’s opening presentation focused on the creative process ‘Conditional Des
 
 ## Keynote: Justin McGuirk, Design Museum (London)
 
-Justing gave a talk about privacy, in relation to (product) design. To make it a bit more interesting, he use *curtains* as an analogy to privacy in his talk - yes, you’ve read that right!
+Justing gave a talk about privacy, in relation to (product) design.  To make it a bit more interesting, he used *curtains* as an analogy to privacy in his talk - yes, you’ve read that right!
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Speaking at Google&#39;s <a href="https://twitter.com/hashtag/SPAN15?src=hash">#SPAN15</a> conference shortly. Curious how my talk on Privacy 1.0 will go down (I&#39;m gonna talk about curtains).</p>&mdash; Justin McGuirk (@justinmcguirk) <a href="https://twitter.com/justinmcguirk/status/664779384407138304">November 12, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Let me re-assure you: it went down well. One interesting thought from the presentation was that sometimes we perceive something to be public, when it is actually private. Or we, as humans, want to be perceived open, but we are actually hiding behind closed curtains. Left me thinking for sure...
+Let me re-assure you: it went down well. One interesting thought from the presentation was that sometimes we perceive something to be public, when it is actually private. Or we, as humans, want to be perceived open, but we are actually hiding behind closed curtains.
 
 ## Workshop #1: Digital Making For Kids
 
@@ -74,4 +71,4 @@ Please note that there were three other workshops that were as amazing as the ot
 
 All the attendees received a goodie bag filled with love by the Google Design team, including a book about the conference, containing all the talks and discussions that we had during the London and New York events. They put a lot of effort into designing the book, and even wrote about it over [here](https://design.google.com/articles/first-edition/).
 
-Lastly, I would like to thank the organisers for inviting me to attend this private event, and to all the great folks whom I met over the week(end) in London!
+Lastly, I would like to thank the organisers for inviting me to attend this event, and to all the great folks whom I met over the weekend in London!
