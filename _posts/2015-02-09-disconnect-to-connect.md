@@ -47,7 +47,7 @@ So, next time when you see someone getting disconnected in your presence, help t
 
 ---
 
-Call-to-action: Tell me what is your single one ritual/habit that you practice each day — which makes you happier and more connected. Contact me on Twitter [@anthonymonori](https://www.twitter.com/anthonymonori).
+Call-to-action: Tell me what is your single one ritual/habit that you practice each day — which makes you happier and more connected. Contact me on Twitter [@hifromantal](https://www.twitter.com/hifromantal).
 
 ---
 
