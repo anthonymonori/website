@@ -1,4 +1,5 @@
 # monori.me
+![Build & Deploy](https://github.com/anthonymonori/monori-me/workflows/Build%20&%20Deploy/badge.svg?branch=master)
 
 ## Install
 
@@ -18,3 +19,8 @@ jekyll build --watch
 ```Shell
 jekyll serve
 ```
+
+---
+
+
+Publicly accessible via [monori.me](https://www.monori.me)
