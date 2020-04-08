@@ -46,7 +46,7 @@ about: true
 blog: true
 
 read-time: true
-show-tags: false
+show-tags: true
 related: true
 blog-nav-links: false
 show-share: true

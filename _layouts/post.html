@@ -13,6 +13,10 @@ layout: page
     {% if site.read-time %} - {% include read-time.html %}{% endif %}
 </span>
 
+<div class="author">
+    <span>Written by {{ site.authors[page.author].name }}</span>
+</div>
+
 {% if site.show-tags %}
     <div class="post-tags">
         {% for tag in page.tags %}
