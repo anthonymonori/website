@@ -1,5 +1,5 @@
 name: Antal János Monori
-bio: Senior software engineer @Skyscanner | Previously at LEGO
+bio: Senior software engineer @Wise | Previously at @Skyscanner, @LEGO_Group
 description: Thoughts about crafting good code and making great coffee ☕️
 
 # if it's an external image, update below for true
@@ -27,7 +27,7 @@ email: anthonymonori@gmail.com
 authors:
     anthonymonori:
         name: Antal János Monori
-        bio: Senior software engineer @Skyscanner | Previously at LEGO
+        bio: Senior software engineer @Wise | Previously at @Skyscanner, @LEGO_Group
         external-image: false
         picture: assets/images/profile.jpg
         twitter: hifromantal
