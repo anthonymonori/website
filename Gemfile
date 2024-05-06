@@ -1,15 +1,8 @@
-source 'http://rubygems.org'
+# frozen_string_literal: true
+source "https://rubygems.org"
 
-gem 'jekyll'
-gem 'rake'
-gem 'rouge'
-gem 'html-proofer'
-gem 'jemoji'
-gem 'jekyll-mentions'
-gem 'jekyll-seo-tag'
-gem 'jekyll-feed'
-gem 'jekyll-sitemap'
-gem 'jekyll-gist'
+gem 'jekyll', '~> 4.3.3'
 gem 'jekyll-paginate'
-gem 'jekyll-youtube'
-gem 'jekyll-redirect-from'
+gem 'jekyll-sitemap'
+gem 'jekyll-relative-links'
+gem "tzinfo-data"

@@ -1,15 +1,4 @@
-_site/
-.sass-cache/
-.jekyll-metadata
-npm-debug.log
-Gemfile.lock
-s3_website.yml
 .DS_Store
-node_modules
-_config.yml
+.idea/
 .jekyll-cache
-.firebase
-.firebaserc
-_data/
-assets/gallery
-firebase-debug.log
+_site/
