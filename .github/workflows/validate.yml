@@ -1,16 +1,16 @@
-name: Validate PR
+name: Validate
 
 on: [pull_request]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    container:
-      image: rubylang/ruby:3.2.3-jammy
     steps:
     - uses: actions/checkout@v4
-    - name: Build the site in the jekyll/builder container
-      run: |
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 3.2.3
+    - run: |
         bundle install && docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --trace"
