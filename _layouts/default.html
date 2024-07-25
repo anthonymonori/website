@@ -1,19 +1,19 @@
 {% include header.html %}
 <div class="container">
 	<div class="profile">
-		<a href="//{{ site.url }}"><img src="{{site.author.picture}}" class="profile-image"></a>
+		<a href="//{{ site.url }}"><img src="//{{ site.url }}/{{site.author.picture}}" class="profile-image"></a>
 		<div class="profile-about">
 			<h2 style="margin-bottom: 0; font-weight: 700;">{{site.author.name}}</h2>
 			{% if site.author.github %}
-				<a href="https://github.com/{{site.author.github}}" target="_blank"><img src="assets/images/icon/github.svg" class="social-icon"></a>
+				<a href="https://github.com/{{site.author.github}}" target="_blank"><img src="//{{ site.url }}/assets/images/icon/github.svg" class="social-icon" alt="GitHub icon"></a>
 			{% endif %}
 			{% if site.author.linkedin %}
-				<a href="https://linkedin.com/in/{{site.author.linkedin}}" target="_blank"><img src="assets/images/icon/linkedin.svg" class="social-icon"></a>
+				<a href="https://linkedin.com/in/{{site.author.linkedin}}" target="_blank"><img src="//{{ site.url }}/assets/images/icon/linkedin.svg" class="social-icon" alt="LinkedIn icon"></a>
 			{% endif %}
 			{% if site.author.linkedin %}
-				<a href="https://androiddev.social/{{site.author.mastodon}}" target="_blank"><img src="assets/images/icon/mastodon.svg" class="social-icon"></a>
+				<a href="https://androiddev.social/{{site.author.mastodon}}" target="_blank"><img src="//{{ site.url }}/assets/images/icon/mastodon.svg" class="social-icon" alt="Mastodon icon"></a>
 			{% endif %}
-			<a href="about"><img src="assets/images/icon/me.svg" class="social-icon"></a>
+			<a href="about"><img src="//{{ site.url }}/assets/images/icon/me.svg" class="social-icon" alt="Person icon"></a>
 			<br>
 			{{ site.author.bio }}
 			<br>
