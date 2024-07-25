@@ -4,9 +4,9 @@ on: [pull_request]
 
 jobs:
   build:
-
-    runs-on: rubylang/ruby:3.2.3-jammy
-
+    runs-on: ubuntu-latest
+    container:
+      image: rubylang/ruby:3.2.3-jammy
     steps:
     - uses: actions/checkout@v4
     - name: Build the site in the jekyll/builder container
