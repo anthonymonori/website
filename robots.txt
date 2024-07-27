@@ -1,2 +1,39 @@
+# Allow all search engines
 User-agent: *
 Disallow:
+
+# Disallow known AI crawlers and searchbots
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Slurp
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: facebot
+Disallow: /
+
+User-agent: Sogou
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SEMrushBot
+Disallow: /
+
+# You may add more AI crawler user-agents as they are identified
