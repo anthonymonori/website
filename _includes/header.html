@@ -7,17 +7,16 @@
 		<title>{% if page.title %}{{page.title}} - {{site.title}}{% else %}{{site.title}}{% endif %}</title>
 		<meta name="description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}">
 		<meta name="keywords" content="{% if page.tags %}{{page.tags}}{% else %}{{site.keywords}}{% endif %}">
-		<base href="{{ site.url }}" />
 		{% if page.date %}
     	<meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
     	<meta content="{{ site.url }}/about/" property="article:author">
   		{% endif %}
         {% seo %}
-		<link rel="stylesheet" href="{{ site.url }}/assets/css/highlight.css">
-		<link rel="stylesheet" href="{{ site.url }}/assets/css/style.css">
-		<link rel="shortcut icon" href="{{ site.url }}/assets/images/favicon.png" />
-		<link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.url }}/atom.xml">
-		<link rel="alternate" type="application/json" title="{{ site.title }}" href="{{ site.url }}/feed.json" />
-		<link rel="sitemap" type="application/xml" title="sitemap" href="{{ site.url }}/sitemap.xml" />
+		<link rel="stylesheet" href="/assets/css/highlight.css">
+		<link rel="stylesheet" href="/assets/css/style.css">
+		<link rel="shortcut icon" href="/assets/images/favicon.png" />
+		<link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/atom.xml">
+		<link rel="alternate" type="application/json" title="{{ site.title }}" href="/feed.json">
+		<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml" />
 	</head>
 	<body>
