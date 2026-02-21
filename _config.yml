@@ -40,7 +40,7 @@ plugins:
   - jekyll-relative-links
   - jekyll-seo-tag
 paginate: 20
-paginate_path: "/page/:num"
+paginate_path: "/blog/page/:num"
 
 collections:
   pages:
@@ -48,7 +48,7 @@ collections:
     permalink: /:name
   posts:
     output: true
-    permalink: /:slug
+    permalink: /blog/:slug
   talks:
     output: false
   

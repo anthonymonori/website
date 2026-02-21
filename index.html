@@ -2,11 +2,10 @@
 layout: default
 ---
 <div class="post-container">
-	{% for post in paginator.posts %}
-        <div class="post-list">
-            <a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
-            <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date: "%d.%m.%Y" }}</time>
-        </div>
-    {% endfor %}
+	<div class="post-list">
+		<span class="post-title">Welcome</span>
+	</div>
 </div>
-{% include pagination.html %}
+<div class="blog-post-content">
+	<p>{{ site.description }}</p>
+</div>
