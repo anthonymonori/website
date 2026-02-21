@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="post-container">
+	<div class="post-list">
+		<span class="post-title">{{ page.title }} · {{ page.event }} · {{ page.location }}</span>
+		<span class="post-date">{{ page.date | date: "%d.%m.%Y" }}</span>
+	</div>
+</div>
+<div class="blog-post-content">
+	{% if page.video_url %}
+	<div class="video-container">
+		{% assign video_id = page.video_url | split: 'v=' | last %}
+		<iframe src="https://www.youtube.com/embed/{{ video_id }}" frameborder="0" allowfullscreen></iframe>
+	</div>
+	{% endif %}
+	
+	{% if page.slides_url %}
+	<p><a href="{{ page.slides_url }}" target="_blank">View slides →</a></p>
+	{% endif %}
+	
+	{{ content }}
+</div>

@@ -1,0 +1,35 @@
+---
+layout: default
+title: Talks
+---
+<div class="post-container">
+	<div class="post-list section-header">
+		<span class="post-title">Talks</span>
+	</div>
+	<div class="post-list section-subheader">
+		<span class="post-title">Upcoming</span>
+	</div>
+	{% assign upcoming = site.talks | where_exp: "talk", "talk.date >= site.time" %}
+	{% for talk in upcoming %}
+	<div class="post-list">
+		<a class="post-title" href="{{ talk.url }}">{{ talk.title }} · {{ talk.event }} · {{ talk.location }}</a>
+		<time datetime="{{ talk.date | date_to_xmlschema }}" class="post-date">{{ talk.date | date: "%d.%m.%Y" }}</time>
+	</div>
+	{% endfor %}
+	{% if upcoming.size == 0 %}
+	<div class="post-list">
+		<span class="post-title" style="opacity: 0.6;">No upcoming talks</span>
+	</div>
+	{% endif %}
+
+	<div class="post-list section-subheader">
+		<span class="post-title">Past</span>
+	</div>
+	{% assign past = site.talks | where_exp: "talk", "talk.date < site.time" | sort: "date" | reverse %}
+	{% for talk in past %}
+	<div class="post-list">
+		<a class="post-title" href="{{ talk.url }}">{{ talk.title }} · {{ talk.event }} · {{ talk.location }}</a>
+		<time datetime="{{ talk.date | date_to_xmlschema }}" class="post-date">{{ talk.date | date: "%d.%m.%Y" }}</time>
+	</div>
+	{% endfor %}
+</div>
