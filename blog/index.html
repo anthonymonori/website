@@ -3,11 +3,6 @@ layout: default
 title: Blog
 ---
 <div class="post-container">
-	<div class="post-list">
-		<span class="post-title">Blog</span>
-	</div>
-</div>
-<div class="post-container">
 	{% for post in paginator.posts %}
         <div class="post-list">
             <a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
