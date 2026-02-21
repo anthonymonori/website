@@ -7,3 +7,8 @@ gem 'jekyll-sitemap'
 gem 'jekyll-relative-links'
 gem 'jekyll-seo-tag'
 gem "tzinfo-data"
+gem 'csv'
+gem 'base64'
+gem 'bigdecimal'
+gem 'logger'
+gem 'mutex_m'
