@@ -50,7 +50,8 @@ collections:
     output: true
     permalink: /blog/:slug
   talks:
-    output: false
+    output: true
+    permalink: /talks/:slug
   
 defaults:
   -
@@ -70,6 +71,12 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  -
+    scope:
+      path: ""
+      type: "talks"
+    values:
+      layout: "talk"
 
 relative_links:
   enabled:     true

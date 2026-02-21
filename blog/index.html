@@ -3,6 +3,9 @@ layout: default
 title: Blog
 ---
 <div class="post-container">
+	<div class="post-list section-header">
+		<span class="post-title">Blog</span>
+	</div>
 	{% for post in paginator.posts %}
         <div class="post-list">
             <a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
