@@ -10,7 +10,7 @@ description: Learn how to set a default AGP build variant in Android Studio to s
 image: /assets/posts/2024-05-06-agp-tidbits-default-build-variant-in-android-studio/header.png
 ---
 
-![image](//{{ site.url }}/assets/posts/2024-05-06-agp-tidbits-default-build-variant-in-android-studio/header.png)
+![image](/assets/posts/2024-05-06-agp-tidbits-default-build-variant-in-android-studio/header.png)
 
 How often do you consider the experience of opening up your project in Android Studio for the first time? If you are in a small team, likely not too often. If you look after the developer experience of a large Android engineering team, you probably do!
 
@@ -20,7 +20,7 @@ Build variants can help you to define different versions of your app, like targe
 
 The above product flavor variations can create quite a long and complex list of Build Variants to choose from in Android Studio:
 
-![image](//{{ site.url }}/assets/posts/2024-05-06-agp-tidbits-default-build-variant-in-android-studio/build-variants-before.png)
+![image](/assets/posts/2024-05-06-agp-tidbits-default-build-variant-in-android-studio/build-variants-before.png)
 
 As you can notice, **this list is simply sorted in ascending alphabetical order** — and therefore the first one might not be the best configuration for someone just starting up with your project. If you want to encourage the use of `staging` over `production`, or `external` over `dev` by default, then please read on.
 
@@ -80,13 +80,13 @@ The above scenario will ensure that out of the api dimension staging will be pre
 
 Next time when an engineer clones your repository, or invalidates the module files for the application module, it would result in having devStagingDebug pre-selected to avoid any confusion.
 
-![image](//{{ site.url }}/assets/posts/2024-05-06-agp-tidbits-default-build-variant-in-android-studio/build-variants-after.png)
+![image](/assets/posts/2024-05-06-agp-tidbits-default-build-variant-in-android-studio/build-variants-after.png)
 
 ### How do I test this?
 
 If you inspect you application's generated module file (e.g. `.idea/modules/app/project-name.app.iml`), you'll find that this is where AGP injects the relevant information to tell Studio which one to prefer in the UI.
 
-![image](//{{ site.url }}/assets/posts/2024-05-06-agp-tidbits-default-build-variant-in-android-studio/how-do-i-test.png)
+![image](/assets/posts/2024-05-06-agp-tidbits-default-build-variant-in-android-studio/how-do-i-test.png)
 
 If you clear the right section, you should be ready to let Studio sync once again and you'll see the results.
 
