@@ -6,7 +6,8 @@ permalink: /agp-tidbits-default-build-variant-in-android-studio/
 tag: [blog, android]
 categories: [android]
 author: Antal Monori
-description: A quick guide on how to set a default 'Active Build Variant' in Android Studio
+description: Learn how to set a default AGP build variant in Android Studio to speed up local builds, reduce confusion across environments, and streamline your team's workflow.
+image: /assets/posts/2024-05-06-agp-tidbits-default-build-variant-in-android-studio/header.png
 ---
 
 ![image](//{{ site.url }}/assets/posts/2024-05-06-agp-tidbits-default-build-variant-in-android-studio/header.png)
