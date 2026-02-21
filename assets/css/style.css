@@ -198,3 +198,13 @@ pre{font-size: 14px; max-width: 90vw; overflow: auto;}
 .mode.active:after {content: "🌛";transform: translateX(20px);}
 .mode.active span {transform: translateX(0);}
 .mode span {position: absolute;z-index: 1;margin: 2px;display: block;width: 18px;height: 18px;background: white;border-radius: 50%;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);transform: translateX(20px);transition: all 0.4s ease;}
+
+.talks-container h2 {margin-top: 1.5em; margin-bottom: 0.5em;}
+.talks-list {list-style: none; padding: 0; margin: 0 0 2em 0;}
+.talk-item {padding: 8px 0; border-bottom: 1px dashed var(--border-color);}
+.talk-item:last-child {border-bottom: none;}
+.talk-date {color: var(--primary-font-color); font-weight: 600; margin-right: 8px;}
+.talk-title {font-weight: 600;}
+.talk-event {display: block; margin-left: 90px; font-size: 0.9em; color: var(--primary-font-color); opacity: 0.8;}
+.talk-links {margin-left: 8px; font-size: 0.85em;}
+.talk-links a {margin: 0 2px;}

@@ -1,0 +1,37 @@
+---
+layout: page
+title: "Talks"
+---
+<div class="talks-container">
+	<h2>Upcoming</h2>
+	<ul class="talks-list">
+		{% assign upcoming = site.talks | where_exp: "talk", "talk.date >= site.time" %}
+		{% for talk in upcoming %}
+		<li class="talk-item">
+			<span class="talk-date">{{ talk.date | date: "%Y-%m-%d" }}</span>
+			<a href="{{ talk.video_url | default: talk.slides_url }}" class="talk-title">{{ talk.title }}</a>
+			<span class="talk-event">{{ talk.event }} ({{ talk.location }})</span>
+		</li>
+		{% endfor %}
+		{% if upcoming.size == 0 %}
+		<li class="talk-item">No upcoming talks</li>
+		{% endif %}
+	</ul>
+
+	<h2>Past</h2>
+	<ul class="talks-list">
+		{% assign past = site.talks | where_exp: "talk", "talk.date < site.time" | sort: "date" | reverse %}
+		{% for talk in past %}
+		<li class="talk-item">
+			<span class="talk-date">{{ talk.date | date: "%Y-%m-%d" }}</span>
+			<a href="{{ talk.video_url | default: talk.slides_url }}" class="talk-title">{{ talk.title }}</a>
+			<span class="talk-event">{{ talk.event }} ({{ talk.location }})</span>
+			{% if talk.video_url and talk.slides_url %}
+			<span class="talk-links">
+				<a href="{{ talk.video_url }}">Video</a> | <a href="{{ talk.slides_url }}">Slides</a>
+			</span>
+			{% endif %}
+		</li>
+		{% endfor %}
+	</ul>
+</div>
