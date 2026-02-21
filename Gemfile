@@ -5,4 +5,5 @@ gem 'jekyll', '~> 4.3.3'
 gem 'jekyll-paginate'
 gem 'jekyll-sitemap'
 gem 'jekyll-relative-links'
+gem 'jekyll-seo-tag'
 gem "tzinfo-data"
