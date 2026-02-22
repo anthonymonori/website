@@ -39,8 +39,12 @@ plugins:
   - jekyll-sitemap
   - jekyll-relative-links
   - jekyll-seo-tag
+  - jekyll-mermaid-prebuild
 paginate: 20
 paginate_path: "/blog/page/:num"
+
+mermaid_prebuild:
+  output_dir: assets/svg
 
 collections:
   pages:

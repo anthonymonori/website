@@ -13,3 +13,7 @@ gem 'bigdecimal'
 gem 'logger'
 gem 'mutex_m'
 gem 'rake'
+
+group :jekyll_plugins do
+  gem 'jekyll-mermaid-prebuild', '~> 0.3.0'
+end

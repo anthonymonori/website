@@ -8,6 +8,8 @@ gem install bundler
 bundle install
 ```
 
+**Note:** This project uses Mermaid diagrams rendered at build time. See [SETUP.md](SETUP.md) for additional dependencies (Node.js, mermaid-cli).
+
 ## Build
 
 ```Shell
@@ -19,8 +21,3 @@ jekyll build --watch
 ```Shell
 jekyll serve
 ```
-
----
-
-
-Publicly accessible via [monori.me](https://www.monori.me)

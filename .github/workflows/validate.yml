@@ -9,7 +9,19 @@ jobs:
     - uses: actions/checkout@v4
     - uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 3.2.3
+        ruby-version: '3.4'
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '24'
+    - name: Install mermaid-cli
+      run: npm install -g @mermaid-js/mermaid-cli
+    - name: Install Puppeteer dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y libgbm1 libasound2t64 libatk1.0-0 \
+          libatk-bridge2.0-0 libcups2 libdrm2 libxcomposite1 \
+          libxdamage1 libxfixes3 libxrandr2 libxkbcommon0 \
+          libpango-1.0-0 libcairo2 libnss3 libnspr4
     - name: Install Jekyll and Bundler
       run: |
         gem install bundler
