@@ -38,7 +38,7 @@ npm install -g @mermaid-js/mermaid-cli
 
 # Install Puppeteer dependencies
 sudo apt-get update
-sudo apt-get install -y libgbm1 libasound2 libatk1.0-0 \
+sudo apt-get install -y libgbm1 libasound2t64 libatk1.0-0 \
   libatk-bridge2.0-0 libcups2 libdrm2 libxcomposite1 \
   libxdamage1 libxfixes3 libxrandr2 libxkbcommon0 \
   libpango-1.0-0 libcairo2 libnss3 libnspr4
@@ -95,7 +95,8 @@ npm install -g @mermaid-js/mermaid-cli
 Install the required system libraries:
 ```bash
 sudo apt-get update
-sudo apt-get install -y libgbm1 libasound2 libatk1.0-0 \
+# Ubuntu 24.04+ uses libasound2t64, older versions use libasound2
+sudo apt-get install -y libgbm1 libasound2t64 libatk1.0-0 \
   libatk-bridge2.0-0 libcups2 libdrm2 libxcomposite1 \
   libxdamage1 libxfixes3 libxrandr2 libxkbcommon0 \
   libpango-1.0-0 libcairo2 libnss3 libnspr4
