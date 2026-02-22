@@ -6,7 +6,7 @@ This project uses [jekyll-mermaid-prebuild](https://github.com/Texarkanine/jekyl
 
 ### Required Dependencies
 
-1. **Ruby 3.2.3+** (for Jekyll)
+1. **Ruby 3.4+** (for Jekyll, required by jekyll-mermaid-prebuild)
 2. **Node.js 24+** (for mermaid-cli)
 3. **mermaid-cli** (for diagram rendering)
 4. **Puppeteer dependencies** (for headless Chrome)
