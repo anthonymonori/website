@@ -1,0 +1,9 @@
+{
+  "name": "monori-me",
+  "scripts": {
+    "prebuild": "npx puppeteer browsers install chrome"
+  },
+  "dependencies": {
+    "@mermaid-js/mermaid-cli": "^11.4.0"
+  }
+}

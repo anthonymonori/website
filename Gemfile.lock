@@ -34,6 +34,8 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
+    jekyll-mermaid-prebuild (0.3.0)
+      jekyll (>= 4.0, < 5.0)
     jekyll-paginate (1.1.0)
     jekyll-relative-links (0.6.1)
       jekyll (>= 3.3, < 5.0)
@@ -92,6 +94,7 @@ DEPENDENCIES
   bigdecimal
   csv
   jekyll (~> 4.3.3)
+  jekyll-mermaid-prebuild (~> 0.3.0)
   jekyll-paginate
   jekyll-relative-links
   jekyll-seo-tag
