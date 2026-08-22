@@ -9,8 +9,6 @@ description: Learn where Gradle build logic should live, from duplicated scripts
 image: /assets/posts/2026-08-22-where-should-gradle-build-logic-live/header.png
 ---
 
-![Build logic moving from many scattered module scripts into a shared, organised convention layer.](/assets/posts/2026-08-22-where-should-gradle-build-logic-live/header.png)
-
 As a project grows, its build logic tends to grow with it. What started as a short `build.gradle(.kts)` file becomes hundreds of scripts applying the same plugins, configuring the same toolchains, and declaring the same dependencies. Eventually, making a seemingly small change requires touching a large part of the project. This is where build logic starts deserving the same attention as any other part of your codebase.
 
 In this post, we will start with duplicated Android build scripts and gradually move that logic into precompiled scripts, an included build, convention plugins, and finally a small custom Gradle DSL.
