@@ -2,7 +2,6 @@
 layout: post
 title: 'AGP tidbits: Default build variant in Android Studio'
 date: 2024-05-06 15:59
-permalink: /agp-tidbits-default-build-variant-in-android-studio/
 tag: [blog, android]
 categories: [android]
 author: Antal Monori
