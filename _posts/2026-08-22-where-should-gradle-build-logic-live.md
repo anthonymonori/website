@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 'Where should Gradle build logic live?'
-date: 2026-08-26 18:32
-permalink: /where-should-gradle-build-logic-live/
+date: 2026-08-26 23:11
 tag: [blog, android]
 categories: [android]
 author: Antal Monori
@@ -80,7 +79,7 @@ buildSrc/
 
 The name of the file exposes the plugin as `sample.android.library`, which can then can already be applied to your project build scripts using `plugins { id("sample.android.library") }`
 
-TODO: Link the GitHub PR that demonstrates this
+See this in [[Step 1] Extract build logic into buildSrc /w precompiled scripts](https://github.com/anthonymonori/sample-gradle-project/pull/5).
 
 ## Is `buildSrc` the right place?
 
@@ -101,7 +100,7 @@ We can turn the `buildSrc` into a regular, explicitly included Gradle build proj
 
 Composite builds are useful for more than build logic, but sharing plugins is one of their primary use cases. Read more about [composite builds](https://docs.gradle.org/current/userguide/composite_builds.html).
 
-TODO: Link PR with this change
+See this in [[Step 2] Move from buildSrc to build-logic /w precompiled scripts](https://github.com/anthonymonori/sample-gradle-project/pull/4).
 
 If you have a small project and want the simplest possible setup, `buildSrc` remains a reasonable choice. If the build logic is growing, has dedicated ownership, or needs a clearer classpath and project boundary, an included build is likely a better fit.
 
@@ -111,7 +110,7 @@ Our `sample.android.library.gradle.kts` is already a plugin. Gradle generates a 
 
 Defining a [binary plugin](https://docs.gradle.org/current/userguide/implementing_gradle_plugins_binary.html#header) gives the implementation a clearer structure. We can split responsibilities across regular classes, use explicit types, isolate optional features, and test individual behaviours more easily — just like with our product source code. It also gives us greater control over how the plugin reacts to other plugins and which parts of its implementation become public.
 
-TODO: Link PR doing this
+See this in [[Step 3] Replace precompiled scripts with binary convention plugins](https://github.com/anthonymonori/sample-gradle-project/pull/3).
 
 This does not change the experience of the consuming module. It still applies the same convention plugin by ID. We are only changing how that convention is implemented behind the boundary.
 
@@ -119,7 +118,7 @@ This does not change the experience of the consuming module. It still applies th
 
 So far, we have focused on module configuration. However, a large amount of important build logic also lives in `settings.gradle.kts`. Settings may define repository policy, plugin resolution, build-cache configuration, feature previews, project discovery, and included builds. If this logic needs to be shared across multiple repositories, we can place it behind a settings plugin in exactly the same spirit as our project conventions. 
 
-TODO: Link PR doing this
+See this in [[Step 4] Extract settings logic into a binary convention plugin](https://github.com/anthonymonori/sample-gradle-project/pull/2).
 
 ## What happens when modules need different capabilities?
 
@@ -167,6 +166,8 @@ sample {
 
 The build logic can then apply the correct plugin and dependency configuration. Later, if we later make KSP the default, we can change that convention in one place. Modules that do not require a special override remain untouched. 
 
+See this in [[Step 5] Introduce a custom DSL for opt-in build features](https://github.com/anthonymonori/sample-gradle-project/pull/1).
+
 *In the next post, I’ll go into more detail about how to define a custom Gradle DSL, model its configuration lazily, and turn those declarations into plugin behaviour.*
 
 ## Where should your build logic live?
@@ -180,6 +181,8 @@ As repetition grows, a precompiled script plugin gives us a lightweight way to i
 As the conventions become more complex, binary plugins let us organise the implementation as regular Kotlin code.
 
 Finally, when modules need to select higher-level capabilities, a small custom DSL can become the public interface to that build logic. You do not necessarily need to reach the final step. Each abstraction should earn its place by removing a real source of repetition, inconsistency, or migration cost.
+
+You can explore the complete progression in the [sample Gradle project](https://github.com/anthonymonori/sample-gradle-project), with each step preserved as a pull request.
 
 ---
 
