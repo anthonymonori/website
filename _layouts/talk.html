@@ -18,6 +18,10 @@ layout: default
 	{% if page.slides_url %}
 	<p><a href="{{ page.slides_url }}" target="_blank">View slides →</a></p>
 	{% endif %}
+
+	{% for post in page.relevant_posts %}
+	<p><a href="{{ post.url | relative_url }}">Read {{ post.title }} →</a></p>
+	{% endfor %}
 	
 	{{ content }}
 </div>

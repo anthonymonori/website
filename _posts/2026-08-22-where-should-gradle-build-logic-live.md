@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Where should Gradle build logic live?'
-date: 2026-08-26 23:11
+date: 2026-08-22 23:11
 tag: [blog, android]
 categories: [android]
 author: Antal Monori

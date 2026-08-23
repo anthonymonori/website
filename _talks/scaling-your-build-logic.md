@@ -5,4 +5,7 @@ event: Londroid
 location: London, UK
 video_url: https://www.youtube.com/watch?v=oVSvmUbnRd0
 slides_url: https://speakerdeck.com/antalmonori/scaling-your-build-logic
+relevant_posts:
+  - title: Where should Gradle build logic live?
+    url: /blog/where-should-gradle-build-logic-live/
 ---
