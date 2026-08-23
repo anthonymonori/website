@@ -77,7 +77,7 @@ buildSrc/
 
 The name of the file exposes the plugin as `sample.android.library`, which can then can already be applied to your project build scripts using `plugins { id("sample.android.library") }`
 
-See this in [[Step 1] Extract build logic into buildSrc /w precompiled scripts](https://github.com/anthonymonori/sample-gradle-project/pull/5).
+See this in [[Step 1] Extract build logic into buildSrc /w precompiled scripts](https://github.com/anthonymonori/sample-gradle-project/commit/ea9ca7606aaeff487ad91fb6d6330cdeb7438b9b).
 
 ## Is `buildSrc` the right place?
 
@@ -98,7 +98,7 @@ We can turn the `buildSrc` into a regular, explicitly included Gradle build proj
 
 Composite builds are useful for more than build logic, but sharing plugins is one of their primary use cases. Read more about [composite builds](https://docs.gradle.org/current/userguide/composite_builds.html).
 
-See this in [[Step 2] Move from buildSrc to build-logic /w precompiled scripts](https://github.com/anthonymonori/sample-gradle-project/pull/4).
+See this in [[Step 2] Move from buildSrc to build-logic /w precompiled scripts](https://github.com/anthonymonori/sample-gradle-project/commit/a2dbee2ae7c62b8d035c88245e6be3d367c8e8ae).
 
 If you have a small project and want the simplest possible setup, `buildSrc` remains a reasonable choice. If the build logic is growing, has dedicated ownership, or needs a clearer classpath and project boundary, an included build is likely a better fit.
 
@@ -108,7 +108,7 @@ Our `sample.android.library.gradle.kts` is already a plugin. Gradle generates a 
 
 Defining a [binary plugin](https://docs.gradle.org/current/userguide/implementing_gradle_plugins_binary.html#header) gives the implementation a clearer structure. We can split responsibilities across regular classes, use explicit types, isolate optional features, and test individual behaviours more easily — just like with our product source code. It also gives us greater control over how the plugin reacts to other plugins and which parts of its implementation become public.
 
-See this in [[Step 3] Replace precompiled scripts with binary convention plugins](https://github.com/anthonymonori/sample-gradle-project/pull/3).
+See this in [[Step 3] Replace precompiled scripts with binary convention plugins](https://github.com/anthonymonori/sample-gradle-project/commit/dc96b4de27d5e51c06110da3c7dfd807e28914dc).
 
 This does not change the experience of the consuming module. It still applies the same convention plugin by ID. We are only changing how that convention is implemented behind the boundary.
 
@@ -116,7 +116,7 @@ This does not change the experience of the consuming module. It still applies th
 
 So far, we have focused on module configuration. However, a large amount of important build logic also lives in `settings.gradle.kts`. Settings may define repository policy, plugin resolution, build-cache configuration, feature previews, project discovery, and included builds. If this logic needs to be shared across multiple repositories, we can place it behind a settings plugin in exactly the same spirit as our project conventions. 
 
-See this in [[Step 4] Extract settings logic into a binary convention plugin](https://github.com/anthonymonori/sample-gradle-project/pull/2).
+See this in [[Step 4] Extract settings logic into a binary convention plugin](https://github.com/anthonymonori/sample-gradle-project/commit/c05d905d77ac12cf1d317a9b7bec6f8319594696).
 
 ## What happens when modules need different capabilities?
 
@@ -164,7 +164,7 @@ sample {
 
 The build logic can then apply the correct plugin and dependency configuration. Later, if we later make KSP the default, we can change that convention in one place. Modules that do not require a special override remain untouched. 
 
-See this in [[Step 5] Introduce a custom DSL for opt-in build features](https://github.com/anthonymonori/sample-gradle-project/pull/1).
+See this in [[Step 5] Introduce a custom DSL for opt-in build features](https://github.com/anthonymonori/sample-gradle-project/commit/2a97f1e6a325de7a2d9c551e1132852573c13e88).
 
 *In the next post, I’ll go into more detail about how to define a custom Gradle DSL, model its configuration lazily, and turn those declarations into plugin behaviour.*
 
@@ -180,7 +180,17 @@ As the conventions become more complex, binary plugins let us organise the imple
 
 Finally, when modules need to select higher-level capabilities, a small custom DSL can become the public interface to that build logic. You do not necessarily need to reach the final step. Each abstraction should earn its place by removing a real source of repetition, inconsistency, or migration cost.
 
-You can explore the complete progression in the [sample Gradle project](https://github.com/anthonymonori/sample-gradle-project), with each step preserved as a pull request.
+You can explore the complete progression in the [sample Gradle project](https://github.com/anthonymonori/sample-gradle-project), with each step preserved as a commit.
+
+## Watch the talk
+
+This article accompanies my talk, *Scaling Your Build Logic*, presented at Londroid.
+
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/oVSvmUbnRd0" title="Scaling Your Build Logic — Londroid talk" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+[View the talk page and slides →](/talks/scaling-your-build-logic)
 
 ---
 
