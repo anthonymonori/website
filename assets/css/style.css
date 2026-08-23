@@ -179,13 +179,22 @@ body{
 .w-100{width: 100%!important;}
 
 a{
+  color: var(--primary-font-color);
+  text-decoration: none;
+}
+a:hover{
+  color: var(--primary-font-color);
+  text-decoration: none;
+}
+.blog-post-content a{
   color: var(--link-color);
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.16em;
 }
-a:hover{
+.blog-post-content a:hover{
   color: var(--link-hover-color);
+  text-decoration: underline;
   text-decoration-thickness: 2px;
 }
 .nav-links a,
