@@ -20,7 +20,7 @@ layout: default
 	{% endif %}
 
 	{% for post in page.relevant_posts %}
-	<p><a href="{{ post.url | relative_url }}">Read {{ post.title }} →</a></p>
+	<p><a href="{{ post.url | relative_url }}">Read relevant blog post</a></p>
 	{% endfor %}
 	
 	{{ content }}
